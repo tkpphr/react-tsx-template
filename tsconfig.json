@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": true,
+    "noImplicitAny":true,
+    "noImplicitThis":true,
+    "noImplicitReturns": true,
+    "noUnusedLocals":true,
+    "target": "ES5",
+    "outDir": "./dist/ts/",
+    "module": "commonjs",
+    "lib": ["es6","dom"],
+    "sourceMap": true,
+    "jsx": "react",
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
+  },
+  "exclude": [
+    "./node_modules",
+    "./dist"
+  ]
+}
