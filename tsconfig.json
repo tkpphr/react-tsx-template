@@ -2,6 +2,7 @@
   "compilerOptions": {
     "removeComments": true,
     "alwaysStrict": true,
+    "esModuleInterop": true,
     "noUnusedParameters": true,
     "noImplicitAny":true,
     "noImplicitThis":true,
@@ -17,7 +18,11 @@
       {
         "name": "typescript-styled-plugin"
       }
-    ]
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "main/*":["src/ts/main/*"],
+    },
   },
   "exclude": [
     "./node_modules",

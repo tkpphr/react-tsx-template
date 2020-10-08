@@ -7,9 +7,9 @@
       "request": "launch",
       "sourceMaps": true,
       "url": "http://localhost:3535/",
-      "webRoot": "${workspaceRoot}/dist",
+      "webRoot": "${workspaceFolder}/src",
       "sourceMapPathOverrides": {
-        "webpack:///*": "${workspaceRoot}/*"
+        "webpack:///*": "${workspaceFolder}/*"
       }
     },
     {

@@ -1,6 +1,4 @@
-node_modules/
-dist/**/
-dist/*.bundle.*
-asset/
-coverage/
+node_modules
+dist
+coverage
 npm-debug.log

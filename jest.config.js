@@ -1,17 +1,13 @@
 module.exports = {
-  "setupFiles": [
-    "<rootDir>/jest.shim.setup.js",
-    "<rootDir>/jest.test.setup.js"
-  ],
   "moduleFileExtensions": ["ts","tsx","js"],
   "transform": {
-    "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    "\.(ts|tsx)$": "ts-jest"
   },
   "moduleNameMapper": {
-    ".+\\.(css|styl|less|sass|scss|png|jpg|jpeg|gif|bmp|svg|ttf|woff|woff2)$": "identity-obj-proxy"
+    '^main/(.*)': '<rootDir>/src/ts/main/$1'
   },
-  "testMatch": ["<rootDir>/src/ts/test/**/*.test.(ts|tsx)"],
-  "collectCoverage": true,
+  "testMatch": ["<rootDir>/src/ts/test/**/*.spec.(ts|tsx)"],
+  "collectCoverage": false,
   "collectCoverageFrom": [
     "src/ts/main/**/*.(ts|tsx)",
     "!node_modules/",
