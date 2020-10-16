@@ -14,14 +14,26 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
   plugins: [
+    'react',
+    'react-app',
+    'react-hooks',
+    'jsx-a11y',
     '@typescript-eslint'
   ],
   rules: {
     
+  },
+  settings:{
+    react: {
+      pragma: 'React',
+      version: 'detect'
+    }
   }
 }
   
